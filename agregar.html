@@ -1,0 +1,50 @@
+<? 
+include('config.php'); 
+if (isset($_POST['submitted'])) { 
+foreach($_POST AS $key => $value) { $_POST[$key] = mysql_real_escape_string($value); } 
+$sql = "INSERT INTO `clientes` ( `estado_id` ,  `nombre` ,  `apellidos` ,  `telefono` ,  `email`  ) VALUES(  '{$_POST['estado_id']}' ,  '{$_POST['nombre']}' ,  '{$_POST['apellidos']}' ,  '{$_POST['telefono']}' ,  '{$_POST['email']}'  ) "; 
+mysql_query($sql) or die(mysql_error()); 
+echo "Added row.<br />"; 
+echo "<a href='consultar.php'>Volver a la lista</a>"; 
+} 
+?>
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+
+
+<form action='' method='POST'> 
+  <p><b>Estado Id:</b><br /><input type='text' name='estado_id'/>
+    <label for="selector">selecionar estado</label>
+    <select name="selector" id="selector">
+    
+    
+    
+    
+    <option>Seleccion Estado</option>
+    <?php foreach ($estados as $estados) {
+			
+		?>
+	  <option value="<?php echo $estados["nombre"];?>" id="" class=""><?php echo $estados["nombre"]; ?></option>
+		<?php }?>
+    </select> 
+  
+  
+  
+  
+  
+  
+  
+  <p><b>Nombre:</b><br />
+    <span id="sprytextfield1">
+    <input type='text' name='nombre'/>
+    <span class="textfieldRequiredMsg">Este valor es requerido.</span></span>
+ 
+ 
+  <p><b>Apellidos:</b><br /><input type='text' name='apellidos'/> 
+  <p><b>Telefono:</b><br /><input type='text' name='telefono'/> 
+  <p><b>Email:</b><br /><input type='text' name='email'/> 
+  <p><input type='submit' value='Add Row' /><input type='hidden' value='1' name='submitted' /> 
+</form> 
+<script type="text/javascript">
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
+</script>

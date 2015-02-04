@@ -1,0 +1,282 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+      margin: 0px;
+
+}
+.index{
+    background:#4ABBCC;
+  
+    width: 100%;
+}
+
+.buttonExit{
+	background-color: #393;
+	color: #fff;
+	padding: 0 25px;
+	height: 30px;
+}
+
+/*=============================================================================================
+Titulo de la Pagina
+===============================================================================================*/
+.textocentrado{
+    text-align: center;
+    font-family: cursive;
+    margin-top: 79px;
+}
+
+
+
+/*=============================================================================================
+Login
+===============================================================================================*/
+
+
+#titulo{  
+    color:#FFF;
+    font-family:'Trebuchet MS', Helvetica, sans-serif;
+    font-size:28px;
+    height:20px;
+    line-height:5px;
+    text-shadow: 1px 1px 2px #000000;
+    text-align:center
+
+}
+#formulariologin{
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-185px;
+    margin-top:-150px;
+    width:330px 015;
+  
+}
+#cuerpo{
+    background:#ececec;
+    border:solid #ccc;
+    border-width: 1px 0;
+    padding:10px 30px 067;
+    height: 249px;
+    width: 128%;
+   
+}
+#cabecera{
+	border-bottom: 1px solid #666;
+	color:#FFF;
+	font-family:'Trebuchet MS', Helvetica, sans-serif;
+	font-size:20px;
+	height:50px;
+	line-height:50px;
+	text-shadow: 1px 1px 2px #000000;
+	text-align:center;
+	background-color: #396;
+}
+.inputformulario{
+    font-size: medium;
+    display: block;
+    width: 230px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    border:1px solid #ccc;
+    font-size: 15px;
+    width: 290px;
+}
+
+.botonformulario{
+    background-color: rgb(26, 188, 156);
+    color: #fff;
+    display: block;
+    padding: 0 25px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 42px;
+    border:none;
+    width: 45%;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.botonformulario:hover {
+    background:#4DC694;
+    
+
+}
+
+#login{
+    margin-top: 10px;
+    
+}
+#pie{
+	border-bottom: 1px solid #666;
+	color:#FFF;
+	font-family:'Trebuchet MS', Helvetica, sans-serif;
+	font-size:20px;
+	height:50px;
+	line-height:50px;
+	text-shadow: 1px 1px 2px #000000;
+	text-align:center;
+	background-color: #093;
+	margin-top: 36px
+}
+/*=============================================================================================
+Estilo de la tabla y el boton Agregar
+===============================================================================================*/
+#table{
+    background: rgb(57, 173, 167);
+    color: #fff;
+}
+
+.mitabla{
+    margin-top: 130px;
+}
+
+.agregar{
+    height: 32px;
+    width: 10%;
+    margin-bottom: 0;
+    border:none;
+    border-radius: 0px;/*dar borde a un boton*/
+    float: left;
+    margin-top: -37px;
+    margin-left: 285px;
+    background: rgb(20, 130, 226);
+    color: rgb(255, 255, 255);
+}
+/*=============================================================================================
+Estilo de la tabla canvas y el boton Agregar
+===============================================================================================*/
+#table2{
+    background: rgb(56, 141, 177);
+    color: #fff;
+}
+
+.mitabla2{
+    margin-top: 60px;
+    margin-right: 608px;
+}
+
+.agregar2{
+    height: 32px;
+    width: 10%;
+    margin-bottom: 0;
+    border:none;
+    border-radius: 0px;/*dar borde a un boton*/
+    float: left;
+    margin-top: -37px;
+    margin-left: 285px;
+    background: rgb(57, 174, 133);
+    color: rgb(255, 255, 255);
+}
+/*=============================================================================================
+Encabezado
+===============================================================================================*/
+header{
+    background:#50BEBE;
+    position:fixed;
+    top:0;
+    padding:5px 0;
+    width:100%;
+    text-align:center;
+    color:#b97f34;
+    height:55px;
+}
+/*=============================================================================================
+Menu del Encabezado
+===============================================================================================*/
+#menu{
+    width:1250px;
+    text-align:center;
+    color:#b97f34;
+    float:right;
+    margin-top:-5px;
+}
+.menuin{
+    width:1300px !important;
+} 
+#menu ul{
+    list-style: none;
+    font-size: 15px;
+    margin-top:-1px;
+    margin-left:20.5%;
+}
+#menu li{
+   display: block;
+   float: left;
+   text-align: center;
+   margin-bottom:20px;
+}   
+#menu li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 26px;
+}
+#menu li a:hover{
+    background: #151a1e;
+    color: #ffc700;
+}
+/*=============================================================================================
+Formulario Insertar
+===============================================================================================*/
+.inser{
+   text-align: center;
+    margin-top: 107px;
+
+}
+
+
+.formularioInsertar{
+    width: 30%;
+    border: 1px solid #ccc;
+    margin:20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    margin-left: 33%;
+}
+
+.formularioInse{
+    font-size: 20px;
+    display: block;
+    width: 100%;
+}
+
+.formunlarioRegist{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border:1px solid #ccc;
+    font-size: 15px;
+}
+
+.formunlarioRegist:focus{
+    border:1px solid #1668C4;
+}
+
+.btn{
+     width: 115px;
+    height: 33px;
+    margin-bottom: 0;
+    border:none;
+    border-radius: 0px;/*dar borde a un boton*/
+    float: left;
+    background: rgb(21, 145, 54);
+    color: rgb(255, 255, 255);
+
+}
+.eliminar{
+     text-decoration: none;
+     color: #F93021;
+     
+}
+.delete{
+    width: 20px;
+    height: 20px;
+}
