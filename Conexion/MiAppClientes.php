@@ -1,7 +1,6 @@
-
 <?php 
 /**
- * Programa que imprime la bienvenida a la aplicación
+ * Programa que desarrolla la funcion de establecer una coneción especial
  *
  * PHP version 5 compatible
  *
@@ -18,27 +17,18 @@
  * @license    http://fb.me/yiddam
  */
 
-?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Untitled Document</title>
-<style type="text/css">
-.x {
-	font-size: 24px;
-	font-family: Verdana, Geneva, sans-serif;
-}
-</style>
-</head>
-
-<body>
-<?php
-  /**
- * Esta es la pagina de bienvenida.
- */
-include('menu.php');
 ?>
+<?php
 
-
-<p class="x">Bienvenidos a MiApp.Clientes</body>
-</html>
+  /**
+ * Establece una conexion especial a la base de datos.
+ */
+# FileName="Connection_php_mysql.htm"
+# Type="MYSQL"
+# HTTP="true"
+$hostname_MiAppClientes = "localhost";
+$database_MiAppClientes = "MiAppClientes";
+$username_MiAppClientes = "root";
+$password_MiAppClientes = "pws777";
+$MiAppClientes = mysql_pconnect($hostname_MiAppClientes, $username_MiAppClientes, $password_MiAppClientes) or trigger_error(mysql_error(),E_USER_ERROR); 
+?>

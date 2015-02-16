@@ -1,7 +1,6 @@
-
 <?php 
 /**
- * Programa que imprime la bienvenida a la aplicación
+ * Programa que desarrolla la funcion de actualizar
  *
  * PHP version 5 compatible
  *
@@ -18,27 +17,20 @@
  * @license    http://fb.me/yiddam
  */
 
-?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Untitled Document</title>
-<style type="text/css">
-.x {
-	font-size: 24px;
-	font-family: Verdana, Geneva, sans-serif;
-}
-</style>
-</head>
-
-<body>
-<?php
-  /**
- * Esta es la pagina de bienvenida.
- */
-include('menu.php');
 ?>
+<?php
+/**
+ * Establece la conecion a la base de datos.
+ */
 
+// Conectar a base de datos
+$link = mysql_connect('localhost', 'root', 'pws777');
+if (!$link) {
+    die('Not connected : ' . mysql_error());
+}
 
-<p class="x">Bienvenidos a MiApp.Clientes</body>
-</html>
+if (! mysql_select_db('MiAppClientes') ) {
+    die ('Can\'t use foo : ' . mysql_error());
+}
+
+?>

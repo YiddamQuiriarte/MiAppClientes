@@ -1,6 +1,28 @@
+<?php 
+/**
+ * Programa que desarrolla la funcion de actualizar
+ *
+ * PHP version 5 compatible
+ *
+ * LICENSE: This source file is subject to version 3.01 of the PHP license
+ * that is available through the world-wide-web at the following URI:
+ * http://www.php.net/license/3_01.txt.  If you did not receive a copy of
+ * the PHP License and are unable to obtain it through the web, please
+ * send a note to license@php.net so we can mail you a copy immediately.
+ *
+ * @category   CategoryName
+ * @package    MiAppClientes
+ * @author     Autor <yiddam@gmail.com> 
+ * @copyright  2015 Mayan Software
+ * @license    http://fb.me/yiddam
+ */
 
-<?php require_once('Connections/MiAppClientes.php'); ?>
+?>
+<?php require_once('Conexion/MiAppClientes.php'); ?>
 <?php
+/**
+ * Manda llamar al programa menu.php que construye el menu
+ */
 include('menu.php');
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -40,7 +62,10 @@ $row_Recordset1 = mysql_fetch_assoc($Recordset1);
 $totalRows_Recordset1 = mysql_num_rows($Recordset1);
 ?>
 <? 
-include('config.php'); 
+/**
+ * Incluye el configurador de la base de datos
+ */
+include('Conexion/config.php'); 
 if (isset($_GET['id']) ) { 
 $id = (int) $_GET['id'];
 
