@@ -61,7 +61,7 @@ $Recordset1 = mysql_query($query_Recordset1, $MiAppClientes) or die(mysql_error(
 $row_Recordset1 = mysql_fetch_assoc($Recordset1);
 $totalRows_Recordset1 = mysql_num_rows($Recordset1);
 ?>
-<? 
+<?php 
 include('Conexion/config.php'); 
 if (isset($_POST['submitted'])) { 
 foreach($_POST AS $key => $value) { $_POST[$key] = mysql_real_escape_string($value); } 

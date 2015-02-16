@@ -61,7 +61,7 @@ $Recordset1 = mysql_query($query_Recordset1, $MiAppClientes) or die(mysql_error(
 $row_Recordset1 = mysql_fetch_assoc($Recordset1);
 $totalRows_Recordset1 = mysql_num_rows($Recordset1);
 ?>
-<? 
+<?php 
 /**
  * Incluye el configurador de la base de datos
  */
@@ -80,10 +80,10 @@ $row = mysql_fetch_array ( mysql_query("SELECT * FROM `clientes` WHERE `id` = '$
 ?>
 
 <form action='' method='POST'> 
-<p><b>Nombre:</b><br /><input type='text' name='nombre' value='<?= stripslashes($row['nombre']) ?>' /> 
-<p><b>Apellidos:</b><br /><input type='text' name='apellidos' value='<?= stripslashes($row['apellidos']) ?>' /> 
-<p><b>Telefono:</b><br /><input type='text' name='telefono' value='<?= stripslashes($row['telefono']) ?>' /> 
-<p><b>Email:</b><br /><input type='text' name='email' value='<?= stripslashes($row['email']) ?>' />
+<p><b>Nombre:</b><br /><input type='text' name='nombre' value='<?php echo stripslashes($row['nombre']) ?>' /> 
+<p><b>Apellidos:</b><br /><input type='text' name='apellidos' value='<?php echo stripslashes($row['apellidos']) ?>' /> 
+<p><b>Telefono:</b><br /><input type='text' name='telefono' value='<?php echo stripslashes($row['telefono']) ?>' /> 
+<p><b>Email:</b><br /><input type='text' name='email' value='<?php echo stripslashes($row['email']) ?>' />
 <p> 
   Seleccionar Estado
   <select name="reselect_estado" id="reselect_estado">
@@ -102,7 +102,7 @@ do {
   </select>
 <p><input type='submit' value='Guardar cambios' /><input type='hidden' value='1' name='submitted' /> 
 </form> 
-<? } ?> 
-<?php
+<?php }
+
 mysql_free_result($Recordset1);
 ?>
