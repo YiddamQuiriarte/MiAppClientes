@@ -28,6 +28,9 @@
 	font-size: 24px;
 	font-family: Verdana, Geneva, sans-serif;
 }
+.ss {
+	font-size: 13px;
+}
 </style>
 </head>
 
@@ -40,5 +43,8 @@ include('menu.php');
 ?>
 
 
-<p class="x">Bienvenidos a MiApp.Clientes</body>
+<p class="x">Bienvenidos a MiApp.Clientes
+<p class="x"><span class="ss"><a href="DOCUMENTACION/index.html">Mostrar documentación de la aplicación</a></span>
+<p><a href="ERS_DOC/TI51_MiAppClientes_Planeacion_ERS_YiddamQuiriarte.pdf">Mostrar documento de ERS</a></p>
+</body>
 </html>

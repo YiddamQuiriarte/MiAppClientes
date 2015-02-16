@@ -4,14 +4,25 @@ a:active { color: #6699CC; text-decoration: underline; }
 
 body { background : #FFFFFF; }
 body, table { font-family: Georgia, Times New Roman, Times, serif; font-size: 10pt }
-p, li { line-height: 140% }
+p, li {
+	line-height: 140%;
+	text-align: left;
+	font-family: Verdana, Geneva, sans-serif;
+}
 a img { border: 0px; }
 dd { margin-left: 0px; padding-left: 1em; }
 
 /* Page layout/boxes */
 
 .info-box {}
-.info-box-title { margin: 1em 0em 0em 0em; padding: .25em; font-weight: normal; font-size: 14pt; border: 2px solid #999999; background-color: #CCCCFF }
+.info-box-title {
+	margin: 1em 0em 0em 0em;
+	padding: 0.25em;
+	font-weight: normal;
+	font-size: 14pt;
+	border: 2px solid #999999;
+	background-color: #3CC
+}
 .info-box-body { border: 1px solid #999999; padding: .5em; }
 .nav-bar { font-size: 8pt; white-space: nowrap; text-align: right; padding: .2em; margin: 0em 0em 1em 0em; }
 
@@ -137,8 +148,16 @@ dd { margin-left: 0px; padding-left: 1em; }
 .ref-title {  }
 .ref-purpose { font-style: italic; color: #666666 }
 .ref-synopsis {  }
-.title { font-weight: bold; margin: 1em 0em 0em 0em; padding: .25em; border: 2px solid #999999; background-color: #CCCCFF  }
+.title {
+	font-weight: bold;
+	margin: 1em 0em 0em 0em;
+	padding: 0.25em;
+	border: 2px solid #999999;
+	background-color: #3CC
+}
 .cmd-synopsis { margin: 1em 0em }
 .cmd-title { font-weight: bold }
 .toc { margin-left: 2em; padding-left: 0em }
-
+.titulo {
+	font-size: 12pt;
+}
